@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface OrderDetailDao {
     @Insert("Insert into order_detail (status, address, account_id, product_id, deliveryman_id, settlement_id, reward_id, price, date) VALUES " +
-            "(#{status}, #{address},#{accountId},#{productId},#{deliverymanId},#{settlementId},#{rewardId},#{price},#{data})")
+            "(#{status}, #{address},#{accountId},#{productId},#{deliverymanId},#{settlementId},#{rewardId},#{price},#{date})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void insert(OrderDetailPO orderDetailPO);
 

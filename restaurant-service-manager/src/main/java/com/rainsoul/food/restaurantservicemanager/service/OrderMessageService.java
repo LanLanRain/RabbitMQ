@@ -40,6 +40,9 @@ public class OrderMessageService {
         log.info("start listening message"); // 开始监听消息的日志记录
         ConnectionFactory connectionFactory = new ConnectionFactory(); // 创建连接工厂
         connectionFactory.setHost("203.195.210.183"); // 设置RabbitMQ服务器的地址
+        connectionFactory.setPort(5672);
+        connectionFactory.setUsername("rain");
+        connectionFactory.setPassword("123456");
 
         // 尝试创建连接和通道，并进行一系列的队列和交换器的声明与绑定
         try (Connection connection = connectionFactory.newConnection();

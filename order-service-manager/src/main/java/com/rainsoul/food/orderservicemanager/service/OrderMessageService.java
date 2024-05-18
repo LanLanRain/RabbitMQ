@@ -114,6 +114,9 @@ public class OrderMessageService {
         // 初始化连接工厂并设置主机地址
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost("203.195.210.183");
+        connectionFactory.setPort(5672);
+        connectionFactory.setUsername("rain");
+        connectionFactory.setPassword("123456");
 
         try {
             // 将消息内容解析为订单消息DTO

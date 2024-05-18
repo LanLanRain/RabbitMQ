@@ -51,6 +51,9 @@ public class OrderService {
         // 设置消息队列的连接工厂，配置消息队列服务器地址
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost("203.195.210.183");
+        connectionFactory.setPort(5672);
+        connectionFactory.setUsername("rain");
+        connectionFactory.setPassword("123456");
 
         // 建立消息队列连接，并创建通道，发送订单消息
         try (Connection connection = connectionFactory.newConnection();

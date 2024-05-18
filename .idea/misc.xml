@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/food/pom.xml" />
         <option value="$PROJECT_DIR$/order-service-manager/pom.xml" />
         <option value="$PROJECT_DIR$/restaurant-service-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/deliveryman-service-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/reward-service-manager/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
