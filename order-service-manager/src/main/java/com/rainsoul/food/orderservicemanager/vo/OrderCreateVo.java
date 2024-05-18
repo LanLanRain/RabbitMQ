@@ -15,6 +15,6 @@ import lombok.ToString;
 public class OrderCreateVo {
     private Integer accountId; // 账户ID
     private String address; // 地址信息
-    private String productId; // 产品ID
+    private Integer productId; // 产品ID
 }
 

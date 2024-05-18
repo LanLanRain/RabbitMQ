@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="order-service-manager" />
+        <module name="restaurant-service-manager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="food" options="-parameters" />
       <module name="order-service-manager" options="-parameters" />
+      <module name="restaurant-service-manager" options="-parameters" />
     </option>
   </component>
 </project>

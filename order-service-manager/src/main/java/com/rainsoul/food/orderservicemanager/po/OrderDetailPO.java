@@ -1,5 +1,6 @@
 package com.rainsoul.food.orderservicemanager.po;
 
+import com.rainsoul.food.orderservicemanager.enummeration.OrderStatus;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -16,7 +17,7 @@ import java.util.Date;
 @ToString
 public class OrderDetailPO {
     private Integer id; // 订单详情的唯一标识符
-    private String status; // 订单的状态
+    private OrderStatus status; // 订单的状态
     private String address; // 订单的配送地址
     private Integer accountId; // 下单用户的账户ID
     private Integer productId; // 订单包含的产品ID

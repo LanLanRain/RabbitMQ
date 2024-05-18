@@ -15,8 +15,8 @@ import java.math.BigDecimal;
 @Setter
 @ToString
 public class OrderMessageDTO {
-    private String orderId; // 订单编号
-    private String productId; // 产品编号
+    private Integer orderId; // 订单编号
+    private Integer productId; // 产品编号
     private OrderStatus orderStatus; // 订单状态
     private BigDecimal price; // 订单价格
     private Integer deliverymanId; // 配送员编号
